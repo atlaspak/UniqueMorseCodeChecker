@@ -1,0 +1,8 @@
+# Editor folder
+.vscode/
+
+# Build folder
+build/
+
+# Testing data
+Testing/

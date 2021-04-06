@@ -1,0 +1,273 @@
+#include <gtest/gtest.h>
+#include "Solution.h"
+
+int main(int argc, char **argv)
+{
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
+}
+
+TEST(TEST_SUITE, TestMedSerie)
+{
+    Solution solution;
+    std::vector<std::string> words = 
+    {
+        "qqbp",
+        "gmyhg",
+        "bduo",
+        "drvmt",
+        "nsszh",
+        "bhzh",
+        "nglsm",
+        "tplsm",
+        "nzthw",
+        "yfsw",
+        "kxhw",
+        "xeujq",
+        "navaota",
+        "jhbek",
+        "wbahk",
+        "wbahk",
+        "jhbek",
+        "yuvg",
+        "yuvg",
+        "yusmn"
+    };
+
+    int testVal = solution.uniqueMorseRepresentations(words);
+    EXPECT_EQ(testVal,7);
+}
+
+TEST(TEST_SUITE, TestShortSerie)
+{
+    Solution solution;
+    std::vector<std::string> words = 
+    {
+        "gin",
+        "zen", 
+        "gig", 
+        "msg"
+    };
+    int testVal = solution.uniqueMorseRepresentations(words);
+    EXPECT_EQ(testVal,2);
+}
+
+TEST(TEST_SUITE, TestLongSerie1)
+{
+    Solution solution;
+    std::vector<std::string> words = 
+    {
+        "bedqz",
+        "duukz",
+        "iqsken",
+        "iqsnc",
+        "frtsat",
+        "frbw",
+        "oaikq",
+        "tmlkq",
+        "xfyy",
+        "ddcow",
+        "xicow",
+        "xurow",
+        "lubu",
+        "rvbu",
+        "vvh",
+        "vvii",
+        "irues",
+        "sbth",
+        "sdah",
+        "veeah",
+        "vvh",
+        "vvh",
+        "vvh",
+        "iruh",
+        "vsth",
+        "sbns",
+        "vvh",
+        "rbnz",
+        "arfz",
+        "rnfz",
+        "oaikq",
+        "tmlkq",
+        "dayvs",
+        "btysb",
+        "bqbb",
+        "tcgw",
+        "tnyut",
+        "gyeat",
+        "qadm",
+        "qpem",
+        "gyew",
+        "qpw",
+        "qpw",
+        "qezm",
+        "gyut",
+        "qpw",
+        "qegw",
+        "qwut",
+        "gngw",
+        "clmva",
+        "caubk",
+        "iqsken",
+        "iqsnc",
+        "qmhup",
+        "gohfg",
+        "jcmut",
+        "wqpw",
+        "ygleu",
+        "kofht",
+        "xfyy",
+        "xicow",
+        "ddcow",
+        "xurow",
+        "ayrzs",
+        "egqph",
+        "fduo",
+        "uluo",
+        "fbao",
+        "fnvo",
+        "fbwm",
+        "lobzq",
+        "lmmvxk",
+        "ohlo",
+        "ohlo",
+        "ixgz",
+        "ueagz",
+        "fjez",
+        "uugz",
+        "fjpe",
+        "duukz",
+        "bedqz",
+        "gutjf",
+        "zwjue",
+        "zwjf",
+        "tbmwtf",
+        "qmhup",
+        "gohfg",
+        "mjhij",
+        "qzhj",
+        "xjiq",
+        "xjiq",
+        "orsk",
+        "mkhk",
+        "ohlo",
+        "ohlo",
+        "xjiq",
+        "xjiq",
+        "ygleu",
+        "kofht",
+        "jitgi"
+    };
+    int testVal = solution.uniqueMorseRepresentations(words);
+    EXPECT_EQ(testVal,24);
+}
+
+TEST(TEST_SUITE, TestLongSerie2)
+{
+    Solution solution;
+    std::vector<std::string> words = 
+    {
+        "wnubvt",
+        "wdphw",
+        "azphw",
+        "unwq",
+        "udok",
+        "igjk",
+        "uxoa",
+        "izmq",
+        "jnntb",
+        "jtrgi",
+        "jnntts",
+        "jkab",
+        "daupfi",
+        "dlyvie",
+        "trupo",
+        "cuwj",
+        "geejcle",
+        "zuolb",
+        "jihbn",
+        "wdhdr",
+        "mqnoee",
+        "ttmwaz",
+        "oywd",
+        "mqyne",
+        "onqz",
+        "itlnyw",
+        "ulkay",
+        "qpad",
+        "meyiz",
+        "qadz",
+        "qpkh",
+        "qpndi",
+        "ufwb",
+        "fenwb",
+        "flos",
+        "syqmb",
+        "vjtjb",
+        "syqmb",
+        "vjtjb",
+        "jcwwz",
+        "aolqtz",
+        "wgtuyz",
+        "udok",
+        "izmq",
+        "igjk",
+        "unwq",
+        "uxoa",
+        "wokr",
+        "joec",
+        "aeci",
+        "rci",
+        "arb",
+        "arb",
+        "ectei",
+        "rks",
+        "rks",
+        "rks",
+        "ecb",
+        "rks",
+        "ecb",
+        "rnb",
+        "rnts",
+        "ecb",
+        "arb",
+        "ecb",
+        "rnb",
+        "rci",
+        "rci",
+        "rnts",
+        "rnb",
+        "rci",
+        "rnb",
+        "rnb",
+        "rks",
+        "ekeb",
+        "rks",
+        "ecb",
+        "etrb",
+        "ecb",
+        "arb",
+        "rci",
+        "rnts",
+        "rnts",
+        "lkghp",
+        "lkzeip",
+        "xhmn",
+        "nlug",
+        "akdr",
+        "angf",
+        "wpf",
+        "pgf",
+        "wpf",
+        "pgf",
+        "pzr",
+        "empf",
+        "pzr",
+        "wpf",
+        "wabn",
+        "wpf",
+        "pgf"
+    };
+    int testVal = solution.uniqueMorseRepresentations(words);
+    EXPECT_EQ(testVal,19);
+}
