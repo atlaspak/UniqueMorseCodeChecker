@@ -23,3 +23,6 @@ morse word array. Hence string operations are avoided.
 
 ### Note
 Please feel free to send feedback or review the code to improve efficiency. Every contribution is appreciated.
+
+### Leetcode link:
+<https://leetcode.com/problems/unique-morse-code-words/>
